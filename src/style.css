@@ -13,6 +13,7 @@
     max-width: 430px;
     margin: 0 auto;
     padding-bottom: 80px;
+    border: 1px solid var(--red);
   }
 
   /* ── Header ── */
@@ -220,19 +221,20 @@
   .grow-card__desc  { font-size: 13.5px; color: var(--light-black); line-height: 1.5; margin-bottom: 18px; }
 
   .btn {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     border-radius: 50px;
-    padding: 13px 28px;
+    padding: 14px;
     font-size: 14px;
     font-weight: 700;
-    text-decoration: none;
-    text-align: center;
     cursor: pointer;
-    border: none;
     width: 100%;
   }
-  .btn--red     { background: #b91c1c; color: #fff; }
-  .btn--outline { background: transparent; border: 2px solid #b91c1c; color: #b91c1c; }
+  .red-btn { background: var(--red); border: none; color: #fff; }
+  .white-btn { background: transparent; border: 1px solid var(--red); color: var(--red); }
+
 
   /* ── FOOTER ── */
   footer {
