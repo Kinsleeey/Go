@@ -41,6 +41,7 @@
       padding: 8px 16px;
       border-bottom: 1.5px solid #BB002008;
       background: rgba(252, 249, 248, 0.7);
+      cursor: pointer;
     }
 
     .subheader p {
