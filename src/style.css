@@ -13,7 +13,6 @@
     max-width: 430px;
     margin: 0 auto;
     padding-bottom: 80px;
-    border: 1px solid;
   }
 
   /* ── Header ── */
@@ -362,11 +361,15 @@
 
   .menu-item__price { font-size: 14px; font-weight: 700; color: #b91c1c; }
 
+  .flex-end {
+    align-self: flex-end;
+  }
   .add-btn {
     width: 32px; height: 32px; border-radius: 50%; border: none;
     background: var(--red);
     display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0; align-self: flex-end; 
+    flex-shrink: 0;  
+    cursor: pointer;
   }
 
   .tray-btn {
@@ -377,3 +380,56 @@
     max-width: 390px;
 }
 
+/* //////////////////  TRAY  ///////////////////////////// */
+ /* ── Header ── */
+ .tray {
+    position: fixed;
+    bottom: 0;
+    left: 50%; transform: translateX(-50%);
+    width: calc(100% - 40px); max-width: 390px;
+    background-color: var(--color);
+    padding: 20px 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+ }
+    .tray-header {
+      padding-bottom: 16px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #BB002080;
+    }
+
+    .tray_header__title {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    /* subtotal */
+    .subtotal {
+      border-top: 1px solid #BB002080;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 8px 0 8px;
+    }
+
+    .subtotal__label {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .subtotal__amount {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--red);
+      letter-spacing: -0.5px;
+    }

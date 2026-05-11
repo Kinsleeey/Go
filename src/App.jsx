@@ -5,6 +5,7 @@ import HomePage from './Homepage';
 import ResturantPage from './UserUI/ResturantPage';
 import OrderFoodPage from './UserUI/OrderFoodPage';
 import { useState } from 'react';
+import Tray from './Tray';
 
 
 function App() {
@@ -15,12 +16,19 @@ function App() {
       console.log(`i've changed the page to ${page}`)
   }
 
+  const [isTrayOpen, setIsTrayOpen] = useState(false);
+
+  function handleClick (what) {
+      setIsTrayOpen(what);
+  }
+
   return (
     <>
       <Header />
       <HomePage navFunction={handleNav} current={currPage}/>
-      <ResturantPage navFunction={handleNav} current={currPage}/>
+      <ResturantPage navFunction={handleNav} current={currPage} trayFunction={handleClick}/>
       <OrderFoodPage navFunction={handleNav} current={currPage}/>
+      <Tray trayFunction={handleClick} check={isTrayOpen}/>
     </>
   )
 }

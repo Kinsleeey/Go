@@ -8,11 +8,11 @@ export default function OrderFoodPage (props) {
             <>
                 <Subheader text="Order food" click={() => props.navFunction("homepage")}/>
 
-                <div class="hero">
+                <div className="hero">
                     <h1>What are you<br /><span>craving?</span></h1>
                     <div className="search">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#BB0020" viewBox="0 0 256 256"><path d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"></path></svg>
-                        <input type="text" placeholder="Search for restaurant..." readonly />
+                        <input type="text" placeholder="Search for restaurant..." readOnly />
                     </div>
                 </div>
                 <div className='setion resturant-grid-section'>
@@ -25,6 +25,7 @@ export default function OrderFoodPage (props) {
                         <ResturantCard img="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=300&q=80" alt="More" rating="4.6" name="Mo's Kitchen" time="5–15 min"/>
                     </div>
                 </div>
+                
                 
             </>
         )
