@@ -236,111 +236,98 @@
   .white-btn { background: transparent; border: 1px solid var(--red); color: var(--red); }
 
 
-  /* ── FOOTER ── */
-  footer {
-    background: #1a1a1a;
-    color: #fff;
-    padding: 40px 20px 30px;
-    margin-top: 32px;
+  /* //////////////////          RESTURANT          ///////////////////////////// */
+  
+
+  /* ── HERO IMAGE ── */
+  .hero-img {
+    width: 100%; height: 220px;
+    object-fit: cover; display: block;
   }
 
-  .footer__logo {
-    font-size: 22px;
-    font-weight: 800;
-    color: #b91c1c;
-    margin-bottom: 14px;
-    letter-spacing: -1px;
-    font-style: italic;
+  /* ── RESTAURANT INFO ── */
+  .info { padding: 20px; background: var(--color); border-bottom: 1.5px solid #BB002080;}
+
+  .info__name {
+    font-size: 28px; font-weight: 800;
+    letter-spacing: -1px; margin-bottom: 14px;
   }
 
-  .footer__desc {
-    font-size: 13px;
-    color: #888;
-    line-height: 1.6;
-    margin-bottom: 18px;
-    max-width: 220px;
+  .info__open {
+    display: flex; align-items: center; gap: 7px;
+    font-size: 14px; font-weight: 600; color: #16a34a;
+    margin-bottom: 8px;
   }
 
-  .footer__socials {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 28px;
+  .info__rating {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 14px; color: var(--light-black); margin-bottom: 4px;
   }
 
-  .social-btn {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    border: 1.5px solid #444;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* ── MENU ── */
+  .menu { padding: 20px 16px; }
+
+  .menu__title {
+    font-size: 22px; font-weight: 800;
   }
 
-  .social-btn svg {
-    width: 16px;
-    height: 16px;
-    stroke: #aaa;
-    fill: none;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+  /* Category rows */
+  .category {
+    border-bottom: 1px solid #e8e3de;
+    padding: 18px 0;
   }
 
-  .footer__col { margin-bottom: 22px; }
-  .footer__col h4 { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 10px; }
-
-  .footer__col a {
-    display: block;
-    font-size: 13px;
-    color: #888;
-    text-decoration: none;
-    margin-bottom: 7px;
+  .category__header {
+    display: flex; align-items: center;
+    justify-content: space-between;
   }
 
-  .footer__copy {
-    font-size: 12px;
-    color: #555;
-    padding-top: 20px;
-    border-top: 1px solid #2e2e2e;
-    text-align: center;
+  .category__label {
+    font-size: 14px; font-weight: 500; color: #aaa;
   }
 
-  /* ── BOTTOM NAV ── */
-  .bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 430px;
-    background: #fff;
-    border-top: 1px solid #ece8e4;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0 14px;
+  .category__label--active { color: #b91c1c; font-weight: 600; }
+
+  .category__icon {
+    width: 20px; height: 20px;
+    stroke: #aaa; fill: none;
+    stroke-width: 2; stroke-linecap: round;
   }
 
-  .nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    text-decoration: none;
-    color: #aaa;
-    font-size: 10px;
-    font-weight: 600;
+  .category__icon--active { stroke: #b91c1c; }
+
+  /* Menu items (only visible in expanded category) */
+  .menu-items { margin-top: 18px; display: flex; flex-direction: column; gap: 16px; }
+
+  .menu-item { 
+    display: flex; 
+    align-items: flex-start; 
+    gap: 12px; 
+    padding: 12px; 
+    border-radius: 12px; 
+    background-color: white;}
+
+  .menu-item__img {
+    width: 80px; height: 80px;
+    border-radius: 12px; object-fit: cover;
+    flex-shrink: 0; background: #ddd;
   }
 
-  .nav-item--active { color: #b91c1c; }
+  .menu-item__body { flex: 1; min-width: 0; }
 
-  .nav-item svg {
-    width: 22px;
-    height: 22px;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+  .menu-item__name { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+
+  .menu-item__desc {
+    font-size: 10px; color: #888;
+    line-height: 1.5; margin-bottom: 8px;
   }
+
+  .menu-item__price { font-size: 14px; font-weight: 700; color: #b91c1c; }
+
+  .add-btn {
+    width: 32px; height: 32px; border-radius: 50%;
+    background: var(--red);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; align-self: flex-end; 
+  }
+
