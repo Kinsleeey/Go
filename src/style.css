@@ -330,10 +330,11 @@
     flex-shrink: 0; align-self: flex-end; 
   }
 
-  .fixed {
+  .tray-btn {
+    margin-top: 20px;
     position: sticky;
     bottom: 20px;
-    width: calc(100% - 40px);
+    width: 100%;
     max-width: 390px;
 }
 
