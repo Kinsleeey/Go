@@ -13,6 +13,7 @@
     max-width: 430px;
     margin: 0 auto;
     padding-bottom: 80px;
+    border: 1px solid;
   }
 
   /* ── Header ── */
@@ -366,11 +367,12 @@
   }
   .add-btn {
     width: 32px; height: 32px; border-radius: 50%; border: none;
-    background: var(--red);
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0;  
     cursor: pointer;
   }
+  .red-add-btn {background-color: var(--red);}
+  .white-add-btn {background-color: white;}
 
   .tray-btn {
     margin-top: 20px;
@@ -387,7 +389,8 @@
     position: fixed;
     bottom: 0;
     left: 50%; transform: translateX(-50%);
-    width: calc(100% - 40px);
+    width: calc(100% - 10px);
+    max-width: 430px;
     background-color: var(--color);
     padding: 20px 16px;
     display: flex;
@@ -433,4 +436,24 @@
       font-weight: 800;
       color: var(--red);
       letter-spacing: -0.5px;
+    }
+
+    /* button */
+    /* ── Quantity control ── */
+    .qty {
+      display: flex;
+      align-items: center;
+      background: #e8e3de;
+      border-radius: 50px;
+      padding: 4px;
+      gap: 2px;
+      align-self: center;
+    }
+
+    .qty__num {
+      width: 24px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      user-select: none;
     }
