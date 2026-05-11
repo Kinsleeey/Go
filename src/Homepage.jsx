@@ -50,9 +50,9 @@ function HomePage (props) {
                     </div>
                     <div className="popular-scroll">
 
-                        <ResturantCard img="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80" alt="The Burger Loft" rating="4.8" name="The Burger Loft" time="15–25 min" click={() => props.navFunction("resturantpage")}/>
-                        <ResturantCard img="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&q=80" alt="Pizza Express" rating="4.5" name="Pizza Express" time="10–20 min"/>
-                        <ResturantCard img="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=300&q=80" alt="More" rating="4.6" name="Mo's Kitchen" time="5–15 min"/>
+                        <ResturantCard img="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80" alt="The Burger Loft" rating="4.8" name="The Burger Loft" time="15–25 min" extraClass="restaurant-card-home" click={() => props.navFunction("resturantpage")}/>
+                        <ResturantCard img="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&q=80" alt="Pizza Express" rating="4.5" name="Pizza Express" time="10–20 min" extraClass="restaurant-card-home"/>
+                        <ResturantCard img="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=300&q=80" alt="More" rating="4.6" name="Mo's Kitchen" time="5–15 min" extraClass="restaurant-card-home"/>
 
                     </div>
                 </section>
