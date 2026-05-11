@@ -13,7 +13,6 @@
     max-width: 430px;
     margin: 0 auto;
     padding-bottom: 80px;
-    border: 1px solid var(--red);
   }
 
   /* ── Header ── */
@@ -325,9 +324,16 @@
   .menu-item__price { font-size: 14px; font-weight: 700; color: #b91c1c; }
 
   .add-btn {
-    width: 32px; height: 32px; border-radius: 50%;
+    width: 32px; height: 32px; border-radius: 50%; border: none;
     background: var(--red);
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0; align-self: flex-end; 
+  }
+
+  .fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 50%; transform: translateX(-50%);
+    width: calc(100% - 40px); max-width: 390px;
   }
 
