@@ -2,6 +2,7 @@ import './style.css';
 import Subheader from './components/Subheader';
 import Button from './components/Button';
 import { useState } from 'react';
+import { ResturantCard } from './components/Card';
 
 
 
@@ -21,7 +22,7 @@ function HomePage (props) {
                     </span>
                     
 
-                    <a href="#" className="action-card action-card--red" onClick={() => props.navFunction("resturantpage")}>
+                    <a href="#" className="action-card action-card--red" onClick={() => props.navFunction("orderfoodpage")}>
                         <div className="action-card__text">
                             <div className="action-card__title">Buy Food</div>
                             <div className="action-card__sub">Hungry? We've got you.</div>
@@ -45,42 +46,13 @@ function HomePage (props) {
                 <section className="section">
                     <div className="section__header">
                         <span className="section__title">Popular near you</span>
-                        <a href="#" className="section__link">See all</a>
+                        <a href="#" className="section__link" onClick={() => props.navFunction("orderfoodpage")}>See all</a>
                     </div>
                     <div className="popular-scroll">
 
-                        <div className="restaurant-card">
-                        <div className="restaurant-card__img-wrap">
-                            <img className="restaurant-card__img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80" alt="The Burger Loft" />
-                            <span className="rating">⭐ 4.8</span>
-                        </div>
-                        <div style={{padding: "12px"}}>                
-                            <div className="restaurant-card__name">The Burger Loft</div>
-                            <div className="restaurant-card__time">15–25 min</div>
-                        </div>
-                        </div>
-
-                        <div className="restaurant-card">
-                        <div className="restaurant-card__img-wrap">
-                            <img className="restaurant-card__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&q=80" alt="Pizza Express" />
-                            <span className="rating">⭐ 4.5</span>
-                        </div>
-                        <div style={{padding: "12px"}}>
-                            <div className="restaurant-card__name">Pizza Express</div>
-                            <div className="restaurant-card__time">10–20 min</div>
-                        </div>
-                        </div>
-
-                        <div className="restaurant-card">
-                        <div className="restaurant-card__img-wrap">
-                            <img className="restaurant-card__img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=300&q=80" alt="More" />
-                            <span className="rating">⭐ 4.6</span>
-                        </div>
-                        <div style={{padding: "12px"}}>
-                            <div className="restaurant-card__name">Mo's Kitchen</div>
-                            <div className="restaurant-card__time">5–15 min</div>
-                        </div>
-                        </div>
+                        <ResturantCard img="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80" alt="The Burger Loft" rating="4.8" name="The Burger Loft" time="15–25 min" click={() => props.navFunction("resturantpage")}/>
+                        <ResturantCard img="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&q=80" alt="Pizza Express" rating="4.5" name="Pizza Express" time="10–20 min"/>
+                        <ResturantCard img="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=300&q=80" alt="More" rating="4.6" name="Mo's Kitchen" time="5–15 min"/>
 
                     </div>
                 </section>

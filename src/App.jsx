@@ -3,6 +3,7 @@ import './style.css';
 import Header from './Header';
 import HomePage from './Homepage';
 import ResturantPage from './UserUI/ResturantPage';
+import OrderFoodPage from './UserUI/OrderFoodPage';
 import { useState } from 'react';
 
 
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <HomePage navFunction={handleNav} current={currPage}/>
       <ResturantPage navFunction={handleNav} current={currPage}/>
+      <OrderFoodPage navFunction={handleNav} current={currPage}/>
     </>
   )
 }

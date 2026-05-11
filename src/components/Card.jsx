@@ -1,6 +1,23 @@
 import '.././style.css';
 import { RoundButton } from './Button';
 
+export function ResturantCard (props) {
+
+    return (
+        <div className="restaurant-card" onClick={props.click}>
+            <div className="restaurant-card__img-wrap">
+                <img className="restaurant-card__img" src={props.img} alt={props.alt} />
+                <span className="rating">⭐ {props.rating}</span>
+            </div>
+            <div style={{padding: "12px"}}>                
+                <div className="restaurant-card__name">{props.name}</div>
+                <div className="restaurant-card__time">{props.time}</div>
+            </div>
+        </div>
+    )
+    
+}
+
 function FoodCard (props) {
     return (
         
@@ -18,5 +35,6 @@ function FoodCard (props) {
         
     )
 }
+
 
 export default FoodCard;

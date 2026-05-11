@@ -8,7 +8,7 @@ function ResturantPage (props) {
     if (props.current === "resturantpage") {
         return (
             <>
-                <Subheader text="Resturant" click={() => props.navFunction("homepage")}/>
+                <Subheader text="Resturant" click={() => props.navFunction("orderfoodpage")}/>
                 
                 <img className="hero-img" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Gusto restaurant" />
 
