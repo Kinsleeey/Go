@@ -1,7 +1,7 @@
 
 import './style.css';
 import Header from './Header';
-import HomePage from './HomePage';
+import HomePage from './Homepage';
 import ResturantPage from './UserUI/ResturantPage';
 import { useState } from 'react';
 
