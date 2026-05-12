@@ -14,6 +14,7 @@ function App() {
 
   function handleNav(page) {
       setCurrPage(page);
+      setIsTrayOpen(false);
       console.log(`i've changed the page to ${page}`)
   }
 
