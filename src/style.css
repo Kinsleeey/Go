@@ -601,7 +601,7 @@
   }
 
   .shipping-total__label { font-size: 16px; font-weight: 700; }
-  .shipping-total__amount { font-size: 16px; font-weight: 700; color: var(--red); }
+  .shipping-total__amount { font-size: 15px; font-weight: 700; color: var(--red); }
 
   /* ── SUMMARY ── */
   .summary {

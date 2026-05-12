@@ -69,8 +69,8 @@ export default function Checkout (props) {
                         
 
                         <div className="shipping-total">
-                            <span className="shipping-total__label">Total Shipping</span>
-                            <span className="shipping-total__amount">&#8358;500</span>
+                            <span className="fee-row__label">Total Shipping</span>
+                            <span className="fee-row__amount" style={{color: "#bb0020"}}>&#8358;500</span>
                         </div>
                     </div>
 
@@ -82,14 +82,14 @@ export default function Checkout (props) {
                             <span className="fee-row__amount">&#8358;4,800</span>
                         </div>
 
-                        <div className="summary-row">
+                        <div className="summary-row" style={{marginTop: "14px"}}>
                             <span className="fee-row__label">Shipping</span>
                             <span className="fee-row__amount">&#8358;500</span>
                         </div>
 
-                        <div className="summary-row summary-row--total" style={{marginTop: "8px"}}>
+                        <div className="summary-row summary-row--total" style={{marginTop: "16px"}}>
                             <span className="shipping-total__label">Total</span>
-                            <span className="shipping-total__amount">&#8358;5,300</span>
+                            <span className="shipping-total__amount" >&#8358;5,300</span>
                         </div>
 
                     </div>
