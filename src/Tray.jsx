@@ -20,7 +20,7 @@ export default function Tray (props) {
                 <span className="subtotal__amount" id="subtotal">&#8358;4,800</span>
             </div>
 
-            <Button title="Place Order" btn="red-btn"/>
+            <Button title="Place Order" btn="red-btn" click={() => props.navFunction("checkout")}/>
         </div>
     )
     }
