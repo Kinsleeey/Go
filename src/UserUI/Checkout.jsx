@@ -101,8 +101,10 @@ export default function Checkout (props) {
                         Secured by Paystack
                     </div>
 
-                    <Button title='Make Payment' btn='red-btn'/>
-                    <Button title='Go back to Resturant' btn='white-btn'/>
+                    <Button title='Make Payment' btn='red-btn' click={() => props.navFunction("sucess")}/>
+                    
+                    <Button title='Go back to Resturant' btn='white-btn' click={() => props.navFunction("orderfoodpage")}/>
+
                 </div>
 
             </>

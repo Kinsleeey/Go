@@ -7,6 +7,7 @@ import OrderFoodPage from './UserUI/OrderFoodPage';
 import Checkout from './UserUI/Checkout';
 import { useState } from 'react';
 import Tray from './Tray';
+import Sucess from './UserUI/OrderStatus';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <OrderFoodPage navFunction={handleNav} current={currPage}/>
       <Tray trayFunction={handleClick} check={isTrayOpen} navFunction={handleNav}/>
       <Checkout navFunction={handleNav} current={currPage}/>
+      <Sucess navFunction={handleNav} current={currPage} />
     </>
   )
 }

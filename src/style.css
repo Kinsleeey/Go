@@ -499,6 +499,7 @@
     border-radius: 20px;
     padding: 4px 12px;
     font-size: 10px; font-weight: 800;
+    width: fit-content;
   }
 
   /* ── FORM ── */
@@ -621,4 +622,87 @@
   .green-dot {
     width: 8px; height: 8px;
     border-radius: 50%; background: #16a34a; flex-shrink: 0;
+  }
+
+  /* //////////////////  CHECKOUT PAGE  ///////////////////////////// */
+  .page {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px; 
+  }
+
+  .s-hero {
+    text-align: center;
+  }
+
+  .check-circle {
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    background: #b91c1c;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto;
+  }
+
+  .s-hero h1 {
+    font-size: 36px; font-weight: 800;
+    letter-spacing: -1px; margin: 8px 0;
+  }
+
+  .s-hero p {
+    font-size: 14px; color: #888;
+  }
+
+  /* ── CARDS ── */
+  .s-card {
+    background: #fff;
+    width: 100%;
+    border-radius: 18px;
+    padding: 0 16px;
+    box-shadow: 0 0 12px rgba(49, 49, 49, 0.2);
+  }
+
+  /* Order details rows */
+  .detail-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid #f0ece8;
+    gap: 16px;
+  }
+
+  .detail-row:last-child { border-bottom: none; }
+
+  .detail-row__label {
+    font-size: 14px; color: #888;
+    flex-shrink: 0;
+  }
+
+  .detail-row__value {
+    font-size: 14px; color: #aaa;
+    text-align: right;
+  }
+
+  .detail-row__value--red {
+    color: #b91c1c;
+    font-weight: 700;
+  }
+
+  /* Tracking card */
+  .tracking-card {
+    background: #fff; box-shadow: 0 0 12px rgba(49, 49, 49, 0.2);
+    border-radius: 18px;
+    padding: 20px;
+  }
+
+  .tracking-label {
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 1.5px; color: #aaa;
+  }
+
+  .tracking-id {
+    font-size: 28px; font-weight: 800;
+    letter-spacing: 1px; margin: 8px 0;
   }
