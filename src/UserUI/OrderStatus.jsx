@@ -49,7 +49,7 @@ export default function Sucess (props) {
                     <Tag text="Show this ID to your rider to collect your delivery"/>
                 </div>
 
-                <Button btn="red-btn" title="Track Order" click={() => props.navFunction("trackorder")}/>
+                <Button btn="red-btn" title="Track Order" click={() => props.navFunction("orderhistory")}/>
                 <Button btn="white-btn" title="Back to Home" click={() => props.navFunction("homepage")}/>
             </div>
         )

@@ -8,6 +8,7 @@ import Checkout from './UserUI/Checkout';
 import { useState } from 'react';
 import Tray from './Tray';
 import Sucess from './UserUI/OrderStatus';
+import OrderHistory from './UserUI/OrderHistory';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <Tray trayFunction={handleClick} check={isTrayOpen} navFunction={handleNav}/>
       <Checkout navFunction={handleNav} current={currPage}/>
       <Sucess navFunction={handleNav} current={currPage} />
+      <OrderHistory navFunction={handleNav} current={currPage}/>
     </>
   )
 }

@@ -18,7 +18,29 @@ export function ResturantCard (props) {
     
 }
 
-function FoodCard (props) {
+export function OrderHistoryCard (props) {
+    return (
+        <div className="order-card">
+            <div className="order-icon">
+                <img src={props.imgSrc} alt={props.imgAlt} />
+            </div>
+            <div className="order-body">
+                <div className="order-name">{props.resturantName}</div>
+                <div className="order-date">{props.date} &bull; {props.time}</div>
+                <div className="order-status">{props.status}</div>
+            </div>
+            <div className="order-right">
+                <div className="order-meta">
+                    <div className="order-price">&#8358;{props.price}</div>
+                    <div className="order-sub">{props.items} items</div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#cccccc" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+            </div>
+        </div>
+    )
+}
+
+export default function FoodCard (props) {
     return (
         
         <div className="menu-item">
@@ -38,4 +60,3 @@ function FoodCard (props) {
 }
 
 
-export default FoodCard;

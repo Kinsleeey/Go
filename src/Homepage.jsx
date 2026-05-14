@@ -12,8 +12,7 @@ function HomePage (props) {
     if (props.current === "homepage") {
         return (
             <div>
-                <Subheader text="Home"/>
-
+                
                 <section className="hero">
                     <div className="live-badge"><span className="live-dot"></span> LIVE IN YOUR CITY</div>
                     <span>
