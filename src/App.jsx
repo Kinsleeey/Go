@@ -7,7 +7,7 @@ import OrderFoodPage from './UserUI/OrderFoodPage';
 import Checkout from './UserUI/Checkout';
 import { useState } from 'react';
 import Tray from './Tray';
-import Sucess from './UserUI/OrderStatus';
+import Sucess, { Failure } from './UserUI/OrderStatus';
 import OrderHistory from './UserUI/OrderHistory';
 import OrderHistoryDetails from './UserUI/OrderHistoryDetails';
 import { OrderHistoryCard } from './components/Card';
@@ -31,14 +31,16 @@ function App() {
   return (
     <>
       <Header />
-      <HomePage navFunction={handleNav} current={currPage}/>
+      {/* <HomePage navFunction={handleNav} current={currPage}/>
       <ResturantPage navFunction={handleNav} current={currPage} trayFunction={handleClick}/>
       <OrderFoodPage navFunction={handleNav} current={currPage}/>
       <Tray trayFunction={handleClick} check={isTrayOpen} navFunction={handleNav}/>
       <Checkout navFunction={handleNav} current={currPage}/>
       <Sucess navFunction={handleNav} current={currPage} />
       <OrderHistory navFunction={handleNav} current={currPage}/>
-      <OrderHistoryDetails navFunction={handleNav} current={currPage}/>
+      <OrderHistoryDetails navFunction={handleNav} current={currPage}/> */}
+
+      <Failure navFunction={handleNav} current={currPage} />
     </>
   )
 }
