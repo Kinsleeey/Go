@@ -31,14 +31,14 @@ function App() {
   return (
     <>
       <Header />
-      {/* <HomePage navFunction={handleNav} current={currPage}/>
+      <HomePage navFunction={handleNav} current={currPage}/>
       <ResturantPage navFunction={handleNav} current={currPage} trayFunction={handleClick}/>
       <OrderFoodPage navFunction={handleNav} current={currPage}/>
       <Tray trayFunction={handleClick} check={isTrayOpen} navFunction={handleNav}/>
       <Checkout navFunction={handleNav} current={currPage}/>
       <Sucess navFunction={handleNav} current={currPage} />
       <OrderHistory navFunction={handleNav} current={currPage}/>
-      <OrderHistoryDetails navFunction={handleNav} current={currPage}/> */}
+      <OrderHistoryDetails navFunction={handleNav} current={currPage}/>
 
       <Failure navFunction={handleNav} current={currPage} />
     </>
