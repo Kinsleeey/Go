@@ -30,7 +30,7 @@ export default function OrderHistory (props) {
                             <div className="order-tab-white">Completed</div>
                         </div>
 
-                        <OrderHistoryCard imgSrc='https://images.unsplash.com/photo-1513104890138-7c749659a591?w=120&q=80' imgAlt='Mamma Mia' resturantName='Mamma Mia Pizzeria' date='Oct 24' time='12:45 PM' price='4,500' items='2' status='Delivered' />
+                        <OrderHistoryCard imgSrc='https://images.unsplash.com/photo-1513104890138-7c749659a591?w=120&q=80' imgAlt='Mamma Mia' resturantName='Mamma Mia Pizzeria' date='Oct 24' time='12:45 PM' price='4,500' items='2' status='Delivered' click={() => props.navFunction("orderhistorydetails")} />
                         <OrderHistoryCard imgSrc='https://images.unsplash.com/photo-1513104890138-7c749659a591?w=120&q=80' imgAlt='Mamma Mia' resturantName='Mamma Mia Pizzeria' date='Oct 24' time='12:45 PM' price='4,500' items='2' status='Delivered' />
                         <OrderHistoryCard imgSrc='https://images.unsplash.com/photo-1513104890138-7c749659a591?w=120&q=80' imgAlt='Mamma Mia' resturantName='Mamma Mia Pizzeria' date='Oct 24' time='12:45 PM' price='4,500' items='2' status='Delivered' />
                         <OrderHistoryCard imgSrc='https://images.unsplash.com/photo-1513104890138-7c749659a591?w=120&q=80' imgAlt='Mamma Mia' resturantName='Mamma Mia Pizzeria' date='Oct 24' time='12:45 PM' price='4,500' items='2' status='Delivered' />

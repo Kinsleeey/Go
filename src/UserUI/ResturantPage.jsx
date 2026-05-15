@@ -39,8 +39,8 @@ function ResturantPage (props) {
                         </div>
 
                         <div className="menu-items">
-                            <FoodCard img="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&q=80" alt="Truffle Tagliatelle" name="Truffle Tagliatelle" des="Handmade ribbon pasta with seasonal black truffle, and brown butter." price="₦2,800"/>
-                            <FoodCard img="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&q=80" alt="Wagyu Bresaola Pizza" name="Wagyu Bresaola Pizza" des="Slow-cured wagyu beef, wild arugula, and aged balsamic glaze base." price="₦10,700"/>
+                            <FoodCard img="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&q=80" alt="Truffle Tagliatelle" name="Truffle Tagliatelle" des="Handmade ribbon pasta with seasonal black truffle, and brown butter." price="₦2,800" btn="single"/>
+                            <FoodCard img="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&q=80" alt="Wagyu Bresaola Pizza" name="Wagyu Bresaola Pizza" des="Slow-cured wagyu beef, wild arugula, and aged balsamic glaze base." price="₦10,700" btn="single"/>
                         </div>
                     </div>
 

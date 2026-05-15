@@ -20,7 +20,7 @@ export function ResturantCard (props) {
 
 export function OrderHistoryCard (props) {
     return (
-        <div className="order-card">
+        <div className="order-card" onClick={props.click}>
             <div className="order-icon">
                 <img src={props.imgSrc} alt={props.imgAlt} />
             </div>
@@ -40,6 +40,19 @@ export function OrderHistoryCard (props) {
     )
 }
 
+function ButtonDecider (props) {
+    if (props.whatBtn === "single") {
+        return <RoundButton extraClass="flex-end" svg={<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg>} />
+    }
+    if(props.whatBtn === "double") {
+        return <CrementButton />
+    }
+    if (props.whatBtn === "none") {
+        return <p>{props.whatQty}</p>
+    }
+
+}
+
 export default function FoodCard (props) {
     return (
         
@@ -47,11 +60,12 @@ export default function FoodCard (props) {
             
             <img className="menu-item__img" src={props.img} alt={props.alt} />
             <div className="menu-item__body">
-            <div className="menu-item__name">{props.name}</div>
-            <div className="menu-item__desc">{props.des}</div>
-            <div className="menu-item__price">{props.price}</div>
+                <div className="menu-item__name">{props.name}</div>
+                <div className="menu-item__desc">{props.des}</div>
+                <div className="menu-item__price">{props.price}</div>
             </div>
-            {props.isTwoBtn ? <CrementButton /> : <RoundButton extraClass="flex-end" svg={<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg>}/>}
+    
+            <ButtonDecider whatBtn = {props.btn} whatQty={props.qty}/>
             
             
         </div>

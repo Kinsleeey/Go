@@ -9,6 +9,8 @@ import { useState } from 'react';
 import Tray from './Tray';
 import Sucess from './UserUI/OrderStatus';
 import OrderHistory from './UserUI/OrderHistory';
+import OrderHistoryDetails from './UserUI/OrderHistoryDetails';
+import { OrderHistoryCard } from './components/Card';
 
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
       <Checkout navFunction={handleNav} current={currPage}/>
       <Sucess navFunction={handleNav} current={currPage} />
       <OrderHistory navFunction={handleNav} current={currPage}/>
+      <OrderHistoryDetails navFunction={handleNav} current={currPage}/>
     </>
   )
 }
