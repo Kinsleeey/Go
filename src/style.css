@@ -901,4 +901,115 @@
       color: #111;
     }
 
-  
+  /* ////////////////////////GRWO WITH GO//////////////////////////// */
+
+    .innerpage {
+      width: 100%;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 8px
+    }
+    
+
+    /* Heading */
+    .innerpage h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #111;
+      position: relative;
+    }
+
+    .innerpage h1 span { color: var(--red); }
+
+    .sub {
+      font-size: 12px;
+      color: #555;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .login-link {
+      color: var(--red);
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: none;
+    
+    }
+
+
+    /* Upload box */
+    .upload-box {
+      border: 2px dashed #e0a0a0;
+      border-radius: 12px;
+      background: #fdf0f0;
+      padding: 28px 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .upload-icon {
+      font-size: 28px;
+      color: #c0392b;
+    }
+
+    .upload-box p {
+      font-size: 14px;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 4px;
+    }
+
+    .upload-box small {
+      font-size: 12px;
+      color: #999;
+    }
+
+    /* Checkbox */
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .checkbox-row input[type="checkbox"] {
+      width: 14px;
+      height: 14px;
+      border: 2px solid var(--red);
+      border-radius: 4px;
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .checkbox-row input[type="checkbox"]:checked {
+      background: var(--border-red);
+    }
+
+    .checkbox-row label {
+      font-size: 12px;
+      color: #333;
+    }
+
+    .checkbox-row a {
+      color: #111;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    
+
+    /* Bottom text */
+    .bottom-text {
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+    }
+
+    .bottom-text a {
+      color: black;
+      font-weight: 600;
+      text-decoration: none;
+      text-decoration: underline;
+    }

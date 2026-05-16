@@ -11,6 +11,7 @@ import Sucess, { Failure } from './UserUI/OrderStatus';
 import OrderHistory from './UserUI/OrderHistory';
 import OrderHistoryDetails from './UserUI/OrderHistoryDetails';
 import { OrderHistoryCard } from './components/Card';
+import GrowWithGo from './GrowWithGo';
 
 
 function App() {
@@ -39,8 +40,8 @@ function App() {
       <Sucess navFunction={handleNav} current={currPage} />
       <OrderHistory navFunction={handleNav} current={currPage}/>
       <OrderHistoryDetails navFunction={handleNav} current={currPage}/>
-
       <Failure navFunction={handleNav} current={currPage} />
+      <GrowWithGo navFunction={handleNav} current={currPage} />
     </>
   )
 }

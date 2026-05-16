@@ -9,9 +9,12 @@ export function ResturantCard (props) {
                 <img className="restaurant-card__img" src={props.img} alt={props.alt} />
                 <span className="rating">⭐ {props.rating}</span>
             </div>
-            <div style={{padding: "12px"}}>                
-                <div className="restaurant-card__name">{props.name}</div>
-                <div className="restaurant-card__time">{props.time}</div>
+            <div style={{padding: "8px 12px", display: 'flex', justifyContent: "space-between", alignItems: "center"}}>
+                <div>                
+                    <div className="restaurant-card__name">{props.name}</div>
+                    <div className="restaurant-card__time">{props.time}</div>
+                </div>
+                <RoundButton svg={<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" viewBox="0 0 256 256"><path d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z"></path></svg>} />
             </div>
         </div>
     )
