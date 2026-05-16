@@ -937,7 +937,9 @@
     
     }
 
-
+    a {
+      cursor: pointer;
+    }
     /* Upload box */
     .upload-box {
       border: 2px dashed #e0a0a0;
@@ -1012,4 +1014,22 @@
       font-weight: 600;
       text-decoration: none;
       text-decoration: underline;
+    }
+
+    /* ///////////////Login/////////////////////// */ 
+
+    
+
+    /* Password wrapper */
+    .pw-wrap { position: relative; }
+
+    .eye {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--red);
+      font-size: 18px;
+      cursor: pointer;
+      line-height: 1;
     }

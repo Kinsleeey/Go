@@ -12,6 +12,7 @@ import OrderHistory from './UserUI/OrderHistory';
 import OrderHistoryDetails from './UserUI/OrderHistoryDetails';
 import { OrderHistoryCard } from './components/Card';
 import GrowWithGo from './GrowWithGo';
+import Login from './Login';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       <OrderHistoryDetails navFunction={handleNav} current={currPage}/>
       <Failure navFunction={handleNav} current={currPage} />
       <GrowWithGo navFunction={handleNav} current={currPage} />
+      <Login navFunction={handleNav} current={currPage} />
     </>
   )
 }

@@ -11,7 +11,7 @@ export default function GrowWithGo (props) {
             <div className="page">
                 <div className='innerpage' >
                     <h1>Grow with <span className='red'>Go</span></h1>
-                    <p className="sub">Already have an account with us? <a className="login-link" href="#" > Login</a></p>
+                    <p className="sub">Already have an account with us? <a className="login-link" onClick={() => props.navFunction("login")}> Login</a></p>
                     
                 </div>
 
@@ -67,7 +67,7 @@ export default function GrowWithGo (props) {
                 <div className='innerpage'>
                     <div style={{display: 'flex', justifyContent: 'center'}}><Tag text='Free to join. No setup fee' /></div>
                     <Button btn='red-btn' title='Submit application' />
-                    <p className="bottom-text">Already registered? <a href="#">Sign in</a></p>
+                    <p className="bottom-text">Already registered? <a onClick={() => props.navFunction("login")}>Login</a></p>
                 </div>
             </div>
             </>
