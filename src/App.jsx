@@ -13,6 +13,7 @@ import OrderHistoryDetails from './UserUI/OrderHistoryDetails';
 import { OrderHistoryCard } from './components/Card';
 import GrowWithGo from './GrowWithGo';
 import Login from './Login';
+import Dashboard from './ResturantUI/Dashboard';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
   return (
     <>
       <Header />
-      <HomePage navFunction={handleNav} current={currPage}/>
+      {/* <HomePage navFunction={handleNav} current={currPage}/>
       <ResturantPage navFunction={handleNav} current={currPage} trayFunction={handleClick}/>
       <OrderFoodPage navFunction={handleNav} current={currPage}/>
       <Tray trayFunction={handleClick} check={isTrayOpen} navFunction={handleNav}/>
@@ -43,7 +44,8 @@ function App() {
       <OrderHistoryDetails navFunction={handleNav} current={currPage}/>
       <Failure navFunction={handleNav} current={currPage} />
       <GrowWithGo navFunction={handleNav} current={currPage} />
-      <Login navFunction={handleNav} current={currPage} />
+      <Login navFunction={handleNav} current={currPage} /> */}
+      <Dashboard />
     </>
   )
 }

@@ -76,4 +76,21 @@ export default function FoodCard (props) {
     )
 }
 
+export function OptionCard (props) {
+    return (
+        
+        <div className="action">
+            <div className="action-icon">
+                {props.svg}
+            </div>
+            <div className="action-text">
+            <div className="action-title">{props.title}</div>
+            <div className="action-sub">{props.sub}</div>
+            </div>
+            <span className="action-arrow">&#8250;</span>
+        </div>
+        
+    )
+}
+
 
