@@ -79,7 +79,7 @@ export default function FoodCard (props) {
 export function OptionCard (props) {
     return (
         
-        <div className="action">
+        <div className="action" onClick={props.click}>
             <div className="action-icon">
                 {props.svg}
             </div>

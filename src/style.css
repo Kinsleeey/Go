@@ -939,33 +939,7 @@
     a {
       cursor: pointer;
     }
-    /* Upload box */
-    .upload-box {
-      border: 2px dashed #e0a0a0;
-      border-radius: 12px;
-      background: #fdf0f0;
-      padding: 28px 20px;
-      text-align: center;
-      cursor: pointer;
-    }
-
-    .upload-icon {
-      font-size: 28px;
-      color: #c0392b;
-    }
-
-    .upload-box p {
-      font-size: 14px;
-      font-weight: 600;
-      color: #111;
-      margin-bottom: 4px;
-    }
-
-    .upload-box small {
-      font-size: 12px;
-      color: #999;
-    }
-
+    
     /* Checkbox */
     .checkbox-row {
       display: flex;
@@ -1121,3 +1095,79 @@
     .action-arrow { font-size: 16px; color: #bbb; }
 
   
+
+    /* //////////////////////////////////////////////////////////ADD PRODUCT/////////////////////////////////////////////////////////////// */
+    /* Content */
+    
+    /* Upload box */
+    .upload-box {
+      border: 2px dashed #e0a0a0;
+      border-radius: 16px;
+      background: #fdf0f0;
+      padding: 60px 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    
+    .upload-box p { font-size: 16px; font-weight: 500; color: #111; margin-bottom: 4px; }
+    .upload-box small { font-size: 12px; color: #999; }
+
+    /* Category chips */
+    .chips {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1.5px solid #ddd;
+      background: #fff;
+      color: #333;
+    }
+
+    .chip.active {
+      background: var(--red);
+      border-color: var(--red);
+      color: #fff;
+    }
+
+    .chip.new {
+      background: #fff;
+      border-color: var(--yellow);
+      color: #333;
+    }
+
+  
+    .price-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      width: 100%;
+      background: #fff;
+      border-radius: 12px;
+      padding: 0 16px;
+      font-size: 12px; color: var(--input-text);
+      border: 1px solid #f3f4f6;
+      outline: none;
+    }
+
+    .price-row .naira { color: var(--red); font-weight: 600; font-size: 14px; }
+
+    .price-row input {
+      border: none;
+      background: transparent;
+      font-size: 14px;
+      outline: none;
+      flex: 1;
+    }
+    
+    .toggle-text p { font-size: 14px; font-weight: 600; color: #111; }
+    .toggle-text small { font-size: 10px; color: #999; }
+
+   

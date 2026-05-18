@@ -26,8 +26,8 @@ export default function OrderHistory (props) {
                     </div>
                     <div className='order-card-div'>
                         <div className="tabs">
-                            <div className="order-tab-yellow">Pending</div>
-                            <div className="order-tab-white">Completed</div>
+                            <div className="chip active">Pending</div>
+                            <div className="chip">Completed</div>
                         </div>
 
                         <OrderHistoryCard imgSrc='https://images.unsplash.com/photo-1513104890138-7c749659a591?w=120&q=80' imgAlt='Mamma Mia' resturantName='Mamma Mia Pizzeria' date='Oct 24' time='12:45 PM' price='4,500' items='2' status='Delivered' click={() => props.navFunction("orderhistorydetails")} />
