@@ -69,4 +69,67 @@ export default function AddProduct (props) {
             </>
         )
     }
+
+    if (props.current === "editproduct") {
+        return (
+            <>
+                <Subheader text="Add Product" click={() => props.navFunction("dashboard")} />
+
+                <div className='page'>
+                
+                    <div className='innerpage'>
+                        <div className="edit-box">
+                            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&q=80" />
+                        </div>
+                    </div>
+
+                    <div className='fields'>
+
+                        <div className='field'>
+                            <label>Select / Add Category</label>
+                            <div className="chips">
+                                <span className="chip">Drinks</span>
+                                <span className="chip active">Food</span>
+                                <span className="chip">Burgers</span>
+                                <span className="chip new">+ New</span>
+                            </div>
+                        </div>
+
+
+                        <div className="field">
+                            <label>Name</label>
+                            <input type="text" placeholder="Truffle Tagliatelle" />
+                        </div>
+
+                        <div className="field">
+                            <label>Price</label>
+                            <div className="price-row">
+                                <span className="naira">₦</span>
+                                <input type="number" placeholder="2,800" />
+                            </div>
+                        </div>
+
+                        <div className="field">
+                            <label>Description</label>
+                            <input type='text' placeholder="Handmade ribbon pasta with seasonal black truffle, and brown butter."></input>
+                        </div>
+
+                        <div className="toggle-row">
+                            <div className="toggle-text">
+                                <p>Available on menu</p>
+                                <small>Toggle off to hide this meal temporarily</small>
+                            </div>
+                            <label className="toggle">
+                                <span className="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div className='innerpage'>
+                        <Button title='Save Changes' btn='red-btn' />
+                        <Button title='Save Changes' btn='white-btn' />
+                    </div>
+                </div>
+            </>
+        )
+    }
 }

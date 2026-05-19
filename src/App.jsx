@@ -19,7 +19,7 @@ import EditMenu from './ResturantUI/EditMenu';
 
 
 function App() {
-  const [ currPage, setCurrPage ] = useState("editmenu")
+  const [ currPage, setCurrPage ] = useState("editproduct")
 
   function handleNav(page) {
       setCurrPage(page);
