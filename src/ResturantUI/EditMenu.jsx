@@ -7,7 +7,7 @@ export default function EditMenu (props) {
     if (props.current === "editmenu") {
         return (
             <>
-                <Subheader text="Edit Menu" />
+                <Subheader text="Edit Menu" click={() => props.navFunction("dashboard")}/>
 
                 <div className="menu">
                     <div className="menu__title">OUR MENU</div>
