@@ -55,6 +55,8 @@
         
     }
 
+    
+
   /* ── HERO ── */
   .hero { 
         padding: 20px ;
@@ -326,16 +328,6 @@
     font-size: 14px; font-weight: 500; color: #aaa;
   }
 
-  .category__label--active { color: #b91c1c; font-weight: 600; }
-
-  .category__icon {
-    width: 20px; height: 20px;
-    stroke: #aaa; fill: none;
-    stroke-width: 2; stroke-linecap: round;
-  }
-
-  .category__icon--active { stroke: #b91c1c; }
-
   /* Menu items (only visible in expanded category) */
   .menu-items { margin-top: 18px; display: flex; flex-direction: column; gap: 16px; }
 
@@ -364,9 +356,10 @@
 
   .menu-item__price { font-size: 14px; font-weight: 700; color: #b91c1c; }
 
-  .flex-end {
+  .down {
     align-self: flex-end;
   }
+
   .add-btn {
     width: 32px; height: 32px; border-radius: 50%; border: none;
     display: flex; align-items: center; justify-content: center; 

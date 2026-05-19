@@ -15,10 +15,11 @@ import GrowWithGo from './GrowWithGo';
 import Login from './Login';
 import Dashboard from './ResturantUI/Dashboard';
 import AddProduct from './ResturantUI/AddProduct';
+import EditMenu from './ResturantUI/EditMenu';
 
 
 function App() {
-  const [ currPage, setCurrPage ] = useState("homepage")
+  const [ currPage, setCurrPage ] = useState("editmenu")
 
   function handleNav(page) {
       setCurrPage(page);
@@ -48,6 +49,7 @@ function App() {
       <Login navFunction={handleNav} current={currPage} />
       <Dashboard navFunction={handleNav} current={currPage}/>
       <AddProduct navFunction={handleNav} current={currPage}/>
+      <EditMenu current={currPage} navFunction={handleNav} />
     </>
   )
 }
