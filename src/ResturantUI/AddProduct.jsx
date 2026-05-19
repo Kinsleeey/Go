@@ -63,7 +63,7 @@ export default function AddProduct (props) {
                         </div>
                     </div>
 
-                    <Button title='Upload' btn='red-btn' />
+                    <Button title='Upload' btn='red-btn' click={() => props.navFunction("dashboard")}/>
 
                 </div>
             </>
@@ -73,7 +73,7 @@ export default function AddProduct (props) {
     if (props.current === "editproduct") {
         return (
             <>
-                <Subheader text="Add Product" click={() => props.navFunction("dashboard")} />
+                <Subheader text="Edit Product" click={() => props.navFunction("editmenu")} />
 
                 <div className='page'>
                 
@@ -125,8 +125,8 @@ export default function AddProduct (props) {
                         </div>
                     </div>
                     <div className='innerpage'>
-                        <Button title='Save Changes' btn='red-btn' />
-                        <Button title='Save Changes' btn='white-btn' />
+                        <Button title='Save Changes' btn='red-btn' click={() => props.navFunction("editmenu")}/>
+                        <Button title='Discard Changes' btn='white-btn' click={() => props.navFunction("editmenu")}/>
                     </div>
                 </div>
             </>
