@@ -28,14 +28,14 @@ function ResturantPage (props) {
                     <div className="category">
                         <div className="category__header">
                         <span className="category__label">Appetizers</span>
-                        <svg className="category__icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#aaa" viewBox="0 0 256 256"><path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"></path></svg>
                         </div>
                     </div>
 
                     <div className="category">
                         <div className="category__header">
                         <span className="category__label category__label--active">Mains</span>
-                        <svg className="category__icon category__icon--active" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#aaa" viewBox="0 0 256 256"><path d="M216.49,168.49a12,12,0,0,1-17,0L128,97,56.49,168.49a12,12,0,0,1-17-17l80-80a12,12,0,0,1,17,0l80,80A12,12,0,0,1,216.49,168.49Z"></path></svg>
                         </div>
 
                         <div className="menu-items">
@@ -47,14 +47,14 @@ function ResturantPage (props) {
                     <div className="category">
                         <div className="category__header">
                         <span className="category__label">Sides</span>
-                        <svg className="category__icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#aaa" viewBox="0 0 256 256"><path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"></path></svg>
                         </div>
                     </div>
 
                     <div className="category">
                         <div className="category__header">
                         <span className="category__label">Drinks</span>
-                        <svg className="category__icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#aaa" viewBox="0 0 256 256"><path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"></path></svg>
                         </div>
                     </div>
 
