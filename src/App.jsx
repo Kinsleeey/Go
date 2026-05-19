@@ -16,10 +16,11 @@ import Login from './Login';
 import Dashboard from './ResturantUI/Dashboard';
 import AddProduct from './ResturantUI/AddProduct';
 import EditMenu from './ResturantUI/EditMenu';
+import ResturantOrderHistory from './ResturantUI/OrderHistory';
 
 
 function App() {
-  const [ currPage, setCurrPage ] = useState("editproduct")
+  const [ currPage, setCurrPage ] = useState("resturantorderhistory")
 
   function handleNav(page) {
       setCurrPage(page);
@@ -50,6 +51,7 @@ function App() {
       <Dashboard navFunction={handleNav} current={currPage}/>
       <AddProduct navFunction={handleNav} current={currPage}/>
       <EditMenu current={currPage} navFunction={handleNav} />
+      <ResturantOrderHistory current={currPage} navFunction={handleNav} />
     </>
   )
 }

@@ -35,7 +35,7 @@ function ResturantPage (props) {
                     <div className="category">
                         <div className="category__header">
                         <span className="category__label category__label--active">Mains</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#aaa" viewBox="0 0 256 256"><path d="M216.49,168.49a12,12,0,0,1-17,0L128,97,56.49,168.49a12,12,0,0,1-17-17l80-80a12,12,0,0,1,17,0l80,80A12,12,0,0,1,216.49,168.49Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#BB0020" viewBox="0 0 256 256"><path d="M216.49,168.49a12,12,0,0,1-17,0L128,97,56.49,168.49a12,12,0,0,1-17-17l80-80a12,12,0,0,1,17,0l80,80A12,12,0,0,1,216.49,168.49Z"></path></svg>
                         </div>
 
                         <div className="menu-items">

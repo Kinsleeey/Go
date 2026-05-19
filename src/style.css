@@ -700,22 +700,7 @@
   }
 
   /* //////////////////  ORDER HISTORY  ///////////////////////////// */
-  /* ── STATS ── */
-  .stats {
-    display: flex;
-    gap: 32px;
-    width: 100%;
-  }
-
-  .stat__label {
-    font-size: 10px; font-weight: 700;
-    letter-spacing: 1.2px; color: #aaa;
-    margin-bottom: 4px;
-  }
-
-  .stat__value {
-    font-size: 16px; font-weight: 700;
-  }
+  
 
   /* ── TABS ── */
   .tabs { display: flex; gap: 10px; width: 100%; }
@@ -1031,7 +1016,9 @@
       color: var(--red);
     }
 
-
+.red {
+  color: var(--red);
+}
     /* Stats */
     .stats {
       display: flex;
@@ -1040,7 +1027,7 @@
 
     .stat { flex: 1; }
 
-    .stat-label { font-size: 12px; color: #888; margin-bottom: 2px; }
+    .stat-label { font-size: 10px; color: #888; margin-bottom: 2px; }
 
     .stat-value {
       font-size: 16px;

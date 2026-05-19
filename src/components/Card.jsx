@@ -24,11 +24,9 @@ export function ResturantCard (props) {
 export function OrderHistoryCard (props) {
     return (
         <div className="order-card" onClick={props.click}>
-            <div className="order-icon">
-                <img src={props.imgSrc} alt={props.imgAlt} />
-            </div>
+            {props.hasImage && <div className="order-icon"><img src={props.imgSrc} alt={props.imgAlt} /></div>}
             <div className="order-body">
-                <div className="order-name">{props.resturantName}</div>
+                <div className={`order-name ${props.color}` }>{props.resturantName}</div>
                 <div className="order-date">{props.date} &bull; {props.time}</div>
                 <div className="order-status">{props.status}</div>
             </div>
