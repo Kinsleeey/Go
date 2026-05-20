@@ -52,7 +52,7 @@ function ButtonDecider (props) {
         return <CrementButton extraclass="down"/>
     }
     if (props.whatBtn === "none") {
-        return <p>{props.whatQty}</p>
+        return <p className='down'>{props.whatQty}</p>
     }
 
 }
