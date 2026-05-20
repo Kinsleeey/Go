@@ -17,6 +17,7 @@ import Dashboard from './ResturantUI/Dashboard';
 import AddProduct from './ResturantUI/AddProduct';
 import EditMenu from './ResturantUI/EditMenu';
 import ResturantOrderHistory from './ResturantUI/OrderHistory';
+import ResturantOrderHistoryDetails from './ResturantUI/OrderHistoryDetails';
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
       <AddProduct navFunction={handleNav} current={currPage}/>
       <EditMenu current={currPage} navFunction={handleNav} />
       <ResturantOrderHistory current={currPage} navFunction={handleNav} />
+      <ResturantOrderHistoryDetails current={currPage} navFunction={handleNav}/>
     </>
   )
 }
