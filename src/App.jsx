@@ -20,7 +20,7 @@ import ResturantOrderHistory from './ResturantUI/OrderHistory';
 
 
 function App() {
-  const [ currPage, setCurrPage ] = useState("resturantorderhistory")
+  const [ currPage, setCurrPage ] = useState("homepage")
 
   function handleNav(page) {
       setCurrPage(page);

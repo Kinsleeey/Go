@@ -12,7 +12,7 @@ function ResturantPage (props) {
                 
                 <img className="hero-img" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Gusto restaurant" />
 
-                <div className="info">
+                <div className="info" style={{padding: '20px'}}>
                     <div className="info__name">GUSTO</div>
                     <div className="info__open"><span className="live-dot"></span> Open Now</div>
                     <div className="info__rating">
