@@ -18,10 +18,12 @@ import AddProduct from './ResturantUI/AddProduct';
 import EditMenu from './ResturantUI/EditMenu';
 import ResturantOrderHistory from './ResturantUI/OrderHistory';
 import ResturantOrderHistoryDetails from './ResturantUI/OrderHistoryDetails';
+import Completed, {Pending} from './RidersUI/RideRequests';
+import RiderDashboard from './RidersUI/RiderDashboard';
 
 
 function App() {
-  const [ currPage, setCurrPage ] = useState("homepage")
+  const [ currPage, setCurrPage ] = useState("riderdashboard")
 
   function handleNav(page) {
       setCurrPage(page);
@@ -54,6 +56,7 @@ function App() {
       <EditMenu current={currPage} navFunction={handleNav} />
       <ResturantOrderHistory current={currPage} navFunction={handleNav} />
       <ResturantOrderHistoryDetails current={currPage} navFunction={handleNav}/>
+      <RiderDashboard current={currPage} navFunction={handleNav} />
     </>
   )
 }

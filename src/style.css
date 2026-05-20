@@ -1162,4 +1162,51 @@
     .toggle-text p { font-size: 14px; font-weight: 600; color: #111; }
     .toggle-text small { font-size: 10px; color: #999; }
 
-   
+   /* /////////////////////Rider/////////////////////// */
+   /* ── Profile section ── */
+    .profile {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .avatar-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .avatar-wrap img {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      background: #555;
+    }
+
+    
+    /* fallback circle if no image */
+    .avatar-placeholder {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background: #444;
+    }
+
+    .profile-info {
+      padding-top: 4px;
+    }
+
+    .profile-info .greeting {
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 2px;
+    }
+
+    .profile-info h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 4px;
+    }

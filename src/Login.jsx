@@ -71,7 +71,7 @@ export default function Login (props){
 
                 <div className='innerpage'>
                     <div style={{display: 'flex', justifyContent: 'center'}}><Tag text='Only registered restaurants can sign in' /></div>
-                    <Button title="Login" btn="red-btn" />
+                    <Button title="Login" btn="red-btn" click={() => props.navFunction("riderdashboard")}/>
                     <p className="bottom-text"> Don't have an account? <a href="#">Sign up</a> </p>
                 </div>
                 
