@@ -23,7 +23,7 @@ import RiderDashboard from './RidersUI/RiderDashboard';
 
 
 function App() {
-  const [ currPage, setCurrPage ] = useState("riderdashboard")
+  const [ currPage, setCurrPage ] = useState("completed")
 
   function handleNav(page) {
       setCurrPage(page);
@@ -57,6 +57,7 @@ function App() {
       <ResturantOrderHistory current={currPage} navFunction={handleNav} />
       <ResturantOrderHistoryDetails current={currPage} navFunction={handleNav}/>
       <RiderDashboard current={currPage} navFunction={handleNav} />
+      <Completed current={currPage} navFunction={handleNav}/>
     </>
   )
 }

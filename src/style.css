@@ -1210,3 +1210,73 @@
       color: #111;
       margin-bottom: 4px;
     }
+
+/* ///////////////////////RIDE REQUESTS///////////////////////////// */
+ .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+    }
+
+    .order-id {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--red);
+    }
+
+    .order-time {
+      color: #aaa;
+    }
+
+    .route {
+      display: flex;
+      flex-direction: column;
+      padding-left: 4px;
+    }
+
+    .route-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #111;
+    }
+
+   
+
+    /* dashed line between dot and pin */
+    .route-line {
+      width: 2px;
+      height: 14px;
+      border-left: 2px dashed var(--border-red);
+      margin-left: 7px;
+    }
+
+    .meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .km {
+      font-size: 12px;
+      font-weight: 700;
+      color: black;
+    }
+
+    .price {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--red);
+    }
