@@ -20,10 +20,11 @@ import ResturantOrderHistory from './ResturantUI/OrderHistory';
 import ResturantOrderHistoryDetails from './ResturantUI/OrderHistoryDetails';
 import Completed, {Pending} from './RidersUI/RideRequests';
 import RiderDashboard from './RidersUI/RiderDashboard';
+import Edit from './RidersUI/EditDetails';
 
 
 function App() {
-  const [ currPage, setCurrPage ] = useState("homepage")
+  const [ currPage, setCurrPage ] = useState("editriderinfo")
 
   function handleNav(page) {
       setCurrPage(page);
@@ -59,6 +60,7 @@ function App() {
       <RiderDashboard current={currPage} navFunction={handleNav} />
       <Completed current={currPage} navFunction={handleNav}/>
       <Pending current={currPage} navFunction={handleNav} />
+      <Edit current={currPage} navFunction={handleNav} />
     </>
   )
 }
