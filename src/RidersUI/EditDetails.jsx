@@ -7,7 +7,7 @@ export default function Edit (props) {
     if (props.current === "editriderinfo") {
         return (
             <>
-                <Subheader text="Edit Details" click={() => props.navFunction("homepage")}/>
+                <Subheader text="Edit Details" click={() => props.navFunction("riderdashboard")}/>
 
                 <div className="page">
                     <div className='fields'>
@@ -46,7 +46,7 @@ export default function Edit (props) {
                         <input type="tel" placeholder="+234 0000000000" />
                         </div>
                     </div>
-                    <Button btn='red-btn' title='Save Changes' />
+                    <Button btn='red-btn' title='Save Changes' click={() => props.navFunction("riderdashboard")} />
                 </div>
             </>
         )

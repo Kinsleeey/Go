@@ -24,7 +24,7 @@ import Edit from './RidersUI/EditDetails';
 
 
 function App() {
-  const [ currPage, setCurrPage ] = useState("editriderinfo")
+  const [ currPage, setCurrPage ] = useState("homepage")
 
   function handleNav(page) {
       setCurrPage(page);
