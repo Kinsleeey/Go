@@ -30,8 +30,82 @@ export default function Completed (props) {
                     </div>
                     <div className='innerpage'>
                         <div className="tabs">
-                            <div className="chip active">Pending</div>
-                            <div className="chip">Completed</div>
+                            <div className="chip active" onClick={() => props.navFunction("pending")}>Pending</div>
+                            <div className="chip" onClick={() => props.navFunction("completed")}>Completed</div>
+                        </div>
+
+                        <RideRequestCard 
+                            orderNum="0042"
+                            time="12:45 PM"
+                            date="Today"
+                            start="Chicken Republic, Awka"
+                            stop="12 Oguta Road, Onitsha"
+                            distance="2.3"
+                            price="850"
+                        />
+                        <RideRequestCard 
+                            orderNum="0042"
+                            time="12:45 PM"
+                            date="Today"
+                            start="Chicken Republic, Awka"
+                            stop="12 Oguta Road, Onitsha"
+                            distance="2.3"
+                            price="850"
+                        />
+                            <RideRequestCard 
+                            orderNum="0042"
+                            time="12:45 PM"
+                            date="Today"
+                            start="Chicken Republic, Awka"
+                            stop="12 Oguta Road, Onitsha"
+                            distance="2.3"
+                            price="850"
+                        />
+                        <RideRequestCard 
+                            orderNum="0042"
+                            time="12:45 PM"
+                            date="Today"
+                            start="Chicken Republic, Awka"
+                            stop="12 Oguta Road, Onitsha"
+                            distance="2.3"
+                            price="850"
+                        />
+                        
+                    </div>
+                </div>
+            </>
+        )
+    }
+}
+
+export function Pending (props) {
+    if (props.current === "pending") {
+        return (
+            <>
+                <Subheader text="Ride Requests" click={() => props.navFunction("riderdashboard")}/>
+                <div className='page'>
+                    <div style={{width: '100%'}}><h1 style={{fontSize: '28px'}}>Delivery Requests</h1></div>
+                    <div className='innerpage'>
+                        <div className="stats" style={{width: '100%'}}>
+                        <div className='stat'>
+                            <div className="stat-label">TOTAL DELIVERIES</div>
+                            <div className="stat-value">124</div>
+                        </div>
+
+                        <div className='stat'>
+                            <div className="stat-label">PENDING</div>
+                            <div className="stat-value">08 </div>
+                        </div>
+                        <div className='stat'>
+                            <div className="stat-label">COMPLETED</div>
+                            <div className="stat-value">116 </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div className='innerpage'>
+                        <div className="tabs">
+                            <div className="chip active" onClick={() => props.navFunction("pending")}>Pending</div>
+                            <div className="chip" onClick={() => props.navFunction("completed")}>Completed</div>
                         </div>
 
                         <RideRequestCard 
@@ -77,16 +151,6 @@ export default function Completed (props) {
                         
                     </div>
                 </div>
-            </>
-        )
-    }
-}
-
-export function Pending () {
-    if (props.current === "pending") {
-        return (
-            <>
-                <Subheader text="Ride Requests" click={() => props.navFunction("riderdashboard")}/>
             </>
         )
     }
