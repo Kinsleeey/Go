@@ -40,7 +40,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header navFunction={handleNav} current={currPage}/>
       <HomePage navFunction={handleNav} current={currPage}/>
       <ResturantPage navFunction={handleNav} current={currPage} trayFunction={handleClick}/>
       <OrderFoodPage navFunction={handleNav} current={currPage}/>
